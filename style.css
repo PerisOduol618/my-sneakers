@@ -452,7 +452,7 @@ footer {
     flex-direction: column;
   }
   .products {
-    /* clip-path: none; */
+    clip-path: polygon(45% 1%, 71% 10%, 100% 0, 100% 100%, 81% 100%, 50% 100%, 20% 100%, 0 100%, 0 2%, 20% 8%);
     display: flex;
     flex-direction: column;
     align-items: center;
