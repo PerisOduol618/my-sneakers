@@ -110,8 +110,39 @@ menuItems.forEach((item, index) => {
 
 // switching product image color
 currentProductColor.forEach((color,index) => {
-    color.addEventListener("click", ()=>{
+    color.addEventListener("click", ()=> {
         currentProductImg.src = choosenProduct.colors[index].img
     })
 })
   
+// Click event to sizes
+currentProductSize.forEach((size,index) => {
+    size.addEventListener("click", () => {
+        currentProductSize.forEach((size) =>{
+            size.style.backgroundColor="white"
+        size.style.color="black"
+        })
+        size.style.backgroundColor="black"
+        size.style.color="white"
+    } )
+})
+
+// Create Modal
+const productButton = document.querySelector(".productButton");
+const payment = document.querySelector(".payment");
+const close = document.querySelector(".close");
+
+productButton.addEventListener("click",(e) => {
+  e.preventDefault();
+  payment.style.display="flex"
+  console.log("click")
+});
+
+close.addEventListener("click",() => {
+  payment.style.display="none"
+});
+
+
+
+
+
